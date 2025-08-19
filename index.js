@@ -16,6 +16,9 @@ renderData(data);
 
 function renderData(destinations) {
     console.log("renderData", destinations);
+    detailsDiv.innerHTML = destinations
+        .map(renderDestinationDetails)
+        .join("");
 
     //TODO fill detailsDiv.innerHTML with results of renderDestinationDetails(selectedDestination)
 
